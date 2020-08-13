@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Informacion</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Koronovairus</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="coronavirus.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="informacion.html">Informacion</a>
+            </li>
+        </div>
+      </nav>
+
+
+    <h1 align="center">¿Que es el coronavirus?</h1>
+
+    <p>El coronavirus es una extensa familia de virus que pueden causar
+        enfermedades tanto en animales como en humanos. En los humanos,
+        se sabe que varios coronavirus causan infecciones respiratorias y que 
+        puede ir desde un resfriado común hasta enfermedades más graves.
+    </p>
+    <br>
+    <h1 align="center">COVID-19</h1>
+    <p>Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China) en diciembre de 2019. 
+        Actualmente la COVID‑19 es una pandemia que afecta a muchos países de todo el mundo.
+        Datos de SSA a nivel nacional de la epidemia por Covid-19
+        <ul>
+            <li>poblacion_total = 126.2</li>
+            <li>casos_confirmados = 485836</li>
+            <li>recuperados = 327993 </li>
+            <li>
+                decesos = 53003 </li>
+        </ul>
+ 
+
+
+    </p> 
+
+    <h3 align="center">Cadenas de Markov para modelar la epidemia por Covid19 en México</h3>
+
+    <p>La pandemia por Covid-19 causada por el nuevo coronavirus SARS-CoV-2 es un reto de inmensidad gigantesca para todos los rubros a nivel global. La comunidad científica trabaja arduamente de froma interdisciplinaria para llegar lo antes posible a la creación de una vacuna o un tratamiento específico contra la enfermedad y garantice la salud de la población mundial. Las predicciones del comportamiento de la pandemia en cada país afectado son cruciales en la toma de decisiones de los gobiernos y por ello el modelamiento matemático de la enfermedad cobra importancia trascendental.
+
+        Las cadenas de Markov son una variante del modelo SIR para representar matemáticamente el desarrollo de enfermedades infecciosas. a continuación se muestra su aplicación en la epidemia por COVID-19 en México.
+        
+        Paso 1. Definir el espacio de estado para modelar la transmisión de Covid-19 Se consideran cuatro estados: suscepibles(S), infectadso(I), recuperados(R) y defunciones debido a la infección(D)</p>
+
+        <img src="part1.PNG" alt="">
+
+<p>Paso 2. Establecer las probabilidades de transición entre estados.
+
+    En el gráfico anterior se muestra las probabilidades de los pasos que son posibles, es decir, aquellos sucesos que sí van a ocurrir. Por ejemplo, una persona susceptible puede pasar directamente al estado infeccioso pero no al estado recuperado ya que para ser considerado recuperado debe pasar primero por el estado infeccioso, tampoco puede pasar de S a D porque también requiere pasar antes por el estado I.
+    
+    Ahora si consideramos a la población infectada por el virus Sars-Cov-2, en un paso pueden llegar a recuperarse o en el peor de los casos fallecer debido a la infección, pero no puede regresar a ser susceptible ya que la condición de susceptibilidad es nunca haber estado en contacto con el virus. Bajo esta misma lógica un paciente recuperado no se puede considerar susceptible ya que en algún momento estuvo en contacto con el virus y en el caso de que haya generado inmunidad ya no es susceptible a infectarse. Con base en eso la matriz de probabilidades es:
+</p>
+
+    <img src="part2.PNG" alt="">
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+
+</body>
+</html>
