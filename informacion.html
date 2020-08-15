@@ -44,8 +44,9 @@
     <h1>COVID-19</h1>
     <p>Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China) en diciembre de 2019. 
         Actualmente la COVID‑19 es una pandemia que afecta a muchos países de todo el mundo.
-       <h3>Estructura del virus</h3> 
-       Los coronavirus deben su nombre a su estructura. Como otros coronavirus, el SARS-CoV-2 es esférico y tiene proteínas S (spike) que le proporcionan un aspecto de corona.
+       
+      <h3>Estructura del virus</h3> 
+       <p>Los coronavirus deben su nombre a su estructura. Como otros coronavirus, el SARS-CoV-2 es esférico y tiene proteínas S (spike) que le proporcionan un aspecto de corona.  </p>
        <img src="10.jpg" class="card-img-top" alt="..."    width="400" height="500"> 
 
         <img src="06.png" class="card-img-top" alt="..."    width="400" height="450">
@@ -91,11 +92,11 @@
   <p>Para las tansiciones:</p>
 
   <ul>
-    <li>P12=casos_confirmados/poblacion_total/1000000</li>
+    <li>P12=incidencia_nacional/100000</li>
     <li>P23=recuperados/casos_confirmados</li>
-    <li>P24=decesos/casos_confirmados </li>
-    <li>
-        decesos = 53003 </li>
+    <li>P24=mortalidad/100000</li>
+    <li>decesos = 53003 </li>
+
 </ul>
 
   <p> Donde
@@ -106,8 +107,17 @@
     
     P24=round(P24,3)  </p>
 
-    <img src ="part3.PNG" alt="">
+    <img src ="100.JPG" alt="">
 
+    <p> Cuando no hay transición donde:
+      <p> P11=1-P12
+        *P11=round(P11,3)
+        P22=1-P23-P24
+        *P22=round(P22,3)
+        P33=1
+        P44=P33 </p>
+    
+    </p>
 
 
 
